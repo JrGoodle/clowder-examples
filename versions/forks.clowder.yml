@@ -1,0 +1,35 @@
+name: forks-clowder
+
+defaults:
+  protocol: ssh
+  source: github
+  git:
+    recursive: true
+
+sources:
+  - name: github
+    url: github.com
+  - name: chromium
+    url: chromium.googlesource.com
+    protocol: https
+  - name: sourceforge
+    url: git.code.sf.net
+    protocol: https
+
+projects:
+  - name: dropbox/djinni
+    remote: upstream
+    fork:
+      name: JrGoodle/djinni
+  - name: external/gyp
+    source: chromium
+    remote: upstream
+    fork:
+      name: JrGoodle/gyp
+      branch: fork-branch
+  - name: p/sox/code
+    path: sox
+    remote: upstream
+    source: sourceforge
+    fork:
+      name: JrGoodle/sox

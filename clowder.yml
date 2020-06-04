@@ -1,7 +1,6 @@
-name: my-clowder
+name: my-first-clowder
 
 defaults:
-  source: github
   protocol: ssh
 
 sources:
@@ -10,28 +9,12 @@ sources:
 
 projects:
   - name: jrgoodle/mu
-    branch: groom
-    groups: [cats]
-    git:
-      lfs: true
-      recursive: true
   - name: jrgoodle/duke
-    tag: v0.01
-    groups: [cats]
   - name: jrgoodle/kit
-    path: black-cats/kit
-    commit: f2e20031ddce5cb097105f4d8ccbc77f4ac20709
     groups: [black-cats]
   - name: jrgoodle/kishka
-    path: black-cats/kishka
     groups: [black-cats]
-    git:
-      config:
-        alias.cat: '!echo "😸"'
   - name: jrgoodle/june
-    path: black-cats/june
-    remote: catnip
-    groups: [black-cats]
+    groups: [black-cats, notdefault]
   - name: jrgoodle/sasha
-    path: black-cats/sasha
     groups: [black-cats, notdefault]

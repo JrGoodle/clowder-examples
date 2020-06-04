@@ -1,0 +1,37 @@
+name: cats-clowder
+
+defaults:
+  protocol: ssh
+  branch: tracking_branch
+  git:
+    config:
+      alias.cat: '!echo "😸"'
+
+sources:
+  - name: github
+    url: github.com
+
+projects:
+  - name: jrgoodle/mu
+    branch: groom
+    git:
+      lfs: true
+      recursive: true
+  - name: jrgoodle/duke
+    tag: v0.01
+  - name: jrgoodle/kit
+    path: black-cats/kit
+    commit: f2e20031ddce5cb097105f4d8ccbc77f4ac20709
+  - name: jrgoodle/kishka
+    path: black-cats/kishka
+    git:
+      config:
+        alias.cat: '!echo "😸😸😸"'
+  - name: jrgoodle/june
+    path: black-cats/june
+    git:
+      config:
+        alias.cat: null
+  - name: jrgoodle/sasha
+    path: black-cats/sasha
+    remote: catnip
