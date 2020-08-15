@@ -1,4 +1,4 @@
-name: cats-clowder
+name: cats-example
 
 defaults:
   protocol: https

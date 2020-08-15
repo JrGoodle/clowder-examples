@@ -1,4 +1,4 @@
-name: forks-clowder
+name: forks-example
 
 defaults:
   git:

@@ -1,13 +1,18 @@
-name: my-first-clowder
+name: cool-projects
+
+sources:
+  - name: google
+    url: gerrit.googlesource.com
+    protocol: https
 
 projects:
-  - name: jrgoodle/mu
-  - name: jrgoodle/duke
-  - name: jrgoodle/kit
-    groups: [black-cats]
-  - name: jrgoodle/kishka
-    groups: [black-cats]
-  - name: jrgoodle/june
-    groups: [black-cats, notdefault]
-  - name: jrgoodle/sasha
-    groups: [black-cats, notdefault]
+  - name: llvm/llvm-project
+    groups: [notdefault, clattner]
+  - name: apple/swift
+    groups: [clattner]
+  - name: tensorflow/tensorflow
+    groups: [google, clattner]
+  - name: git-repo
+    path: repo
+    source: google
+    groups: [google]
