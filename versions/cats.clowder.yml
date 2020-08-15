@@ -1,15 +1,11 @@
 name: cats-clowder
 
 defaults:
-  protocol: ssh
+  protocol: https
   branch: tracking_branch
   git:
     config:
       alias.cat: '!echo "😸"'
-
-sources:
-  - name: github
-    url: github.com
 
 projects:
   - name: jrgoodle/mu

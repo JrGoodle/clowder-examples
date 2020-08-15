@@ -1,12 +1,5 @@
 name: my-first-clowder
 
-defaults:
-  protocol: ssh
-
-sources:
-  - name: github
-    url: github.com
-
 projects:
   - name: jrgoodle/mu
   - name: jrgoodle/duke

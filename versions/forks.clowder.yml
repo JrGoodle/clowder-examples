@@ -1,14 +1,10 @@
 name: forks-clowder
 
 defaults:
-  protocol: ssh
-  source: github
   git:
     recursive: true
 
 sources:
-  - name: github
-    url: github.com
   - name: chromium
     url: chromium.googlesource.com
     protocol: https
