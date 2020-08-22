@@ -7,12 +7,12 @@ defaults:
     config:
       alias.cat: '!echo "😸"'
 
-projects:
+clowder:
   - name: jrgoodle/mu
     branch: groom
     git:
       lfs: true
-      recursive: true
+      submodules: true
   - name: jrgoodle/duke
     tag: v0.01
   - name: jrgoodle/kit

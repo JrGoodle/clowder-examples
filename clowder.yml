@@ -5,7 +5,7 @@ sources:
     url: gerrit.googlesource.com
     protocol: https
 
-projects:
+clowder:
   - name: llvm/llvm-project
     groups: [notdefault, clattner]
   - name: apple/swift
