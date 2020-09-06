@@ -8,26 +8,26 @@ defaults:
       alias.cat: '!echo "😸"'
 
 clowder:
-  - name: jrgoodle/mu
+  - name: JrGoodle/mu
     branch: groom
     git:
       lfs: true
       submodules: true
-  - name: jrgoodle/duke
+  - name: JrGoodle/duke
     tag: v0.01
-  - name: jrgoodle/kit
+  - name: JrGoodle/kit
     path: black-cats/kit
     commit: f2e20031ddce5cb097105f4d8ccbc77f4ac20709
-  - name: jrgoodle/kishka
+  - name: JrGoodle/kishka
     path: black-cats/kishka
     git:
       config:
         alias.cat: '!echo "😸😸😸"'
-  - name: jrgoodle/june
+  - name: JrGoodle/june
     path: black-cats/june
     git:
       config:
         alias.cat: null
-  - name: jrgoodle/sasha
+  - name: JrGoodle/sasha
     path: black-cats/sasha
     remote: catnip
