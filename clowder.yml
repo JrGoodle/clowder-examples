@@ -1,18 +1,15 @@
 name: cool-projects
 
-sources:
-  google:
-    url: gerrit.googlesource.com
-    protocol: https
-
 clowder:
-  - name: llvm/llvm-project
-    groups: [notdefault, clattner]
-  - name: apple/swift
-    groups: [clattner]
-  - name: tensorflow/tensorflow
-    groups: [google, clattner]
-  - name: git-repo
-    path: repo
-    source: google
-    groups: [google]
+  clattner:
+    - name: llvm/llvm-project
+      groups: [notdefault]
+    - apple/swift
+    - name: tensorflow/tensorflow
+      groups: [google]
+  google:
+    - name: git-repo
+      path: repo
+      source:
+        url: gerrit.googlesource.com
+        protocol: https
