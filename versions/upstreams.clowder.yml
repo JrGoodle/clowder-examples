@@ -13,7 +13,6 @@ clowder:
   - name: JrGoodle/djinni
     upstream: dropbox/djinni
   - name: JrGoodle/gyp
-    branch: fork-branch
     upstream:
       name: external/gyp
       source: chromium
