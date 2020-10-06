@@ -1,15 +1,7 @@
-name: cool-projects
+name: cats
 
 clowder:
-  clattner:
-    - name: llvm/llvm-project
-      groups: [notdefault]
-    - apple/swift
-    - name: tensorflow/tensorflow
-      groups: [google]
-  google:
-    - name: git-repo
-      path: repo
-      source:
-        url: gerrit.googlesource.com
-        protocol: https
+  - JrGoodle/mu
+  - JrGoodle/duke
+  - JrGoodle/kit
+  - JrGoodle/kishka
