@@ -14,7 +14,7 @@ clowder:
       branch: felid
       git:
         lfs: true
-        submodules: update recursive
+        submodules: recursive
   cats:
     - name: JrGoodle/mu
       branch: knead
