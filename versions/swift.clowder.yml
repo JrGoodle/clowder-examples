@@ -1,0 +1,61 @@
+name: swift-master
+
+protocol: https
+
+defaults:
+  git:
+    submodules: recursive
+
+clowder:
+  swift:
+    - name: apple/llvm-project
+      branch: swift/master
+      upstream: llvm/llvm-project
+    - name: apple/swift-llbuild
+      path: llbuild
+    - apple/swift
+    - apple/swift-tools-support-core
+    - apple/swift-driver
+    - apple/swift-syntax
+    - apple/swift-xcode-playground-support
+    - apple/indexstore-db
+    - apple/sourcekit-lsp
+    - apple/swift-format
+
+  swiftpm:
+    - name: apple/swift-package-manager
+      path: swiftpm
+    - name: apple/swift-argument-parser
+      tag: '0.0.5'
+
+  test:
+    - apple/swift-stress-tester
+    - apple/swift-integration-tests
+
+  corelibs:
+    - apple/swift-corelibs-xctest
+    - apple/swift-corelibs-foundation
+    - apple/swift-corelibs-libdispatch
+
+  third-party:
+    - name: tensorflow/swift-apis
+      path: tensorflow-swift-apis
+    - name: ninja-build/ninja
+      branch: release
+    - name: jpsim/Yams
+      path: yams
+      tag: '3.0.1'
+    - name: apple/swift-cmark
+      path: cmark
+      upstream: commonmark/cmark
+    - name: pvieito/PythonKit
+      path: pythonkit
+
+  linux:
+    groups: [notdefault]
+    projects:
+      - name: KitWare/CMake
+        path: cmake
+        tag: v3.16.5
+      - name: unicode-org/icu
+        tag: release-65-1
