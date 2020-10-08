@@ -1,0 +1,10 @@
+name: source
+
+clowder:
+  - llvm/llvm-project
+  - apple/swift
+  - tensorflow/tensorflow
+  - name: git-repo
+    source:
+      url: gerrit.googlesource.com
+      protocol: https

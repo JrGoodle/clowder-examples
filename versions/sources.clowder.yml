@@ -1,4 +1,4 @@
-name: upstreams
+name: sources
 
 sources:
   google:
@@ -9,7 +9,5 @@ clowder:
   - llvm/llvm-project
   - apple/swift
   - tensorflow/tensorflow
-  - name: JrGoodle/repo
-    upstream:
-      name: git-repo
-      source: google
+  - name: git-repo
+    source: google

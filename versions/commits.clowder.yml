@@ -1,0 +1,7 @@
+name: commits
+
+clowder:
+  - name: llvm/llvm-project
+    commit: aed0d21a62dbc90c083288d6d35591f33add92ac
+  - apple/swift
+  - tensorflow/tensorflow

@@ -1,0 +1,7 @@
+name: tags
+
+clowder:
+  - llvm/llvm-project
+  - name: apple/swift
+    tag: swift-5.2.5-RELEASE
+  - tensorflow/tensorflow

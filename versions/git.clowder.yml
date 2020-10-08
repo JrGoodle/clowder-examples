@@ -1,0 +1,12 @@
+name: git
+
+clowder:
+  - name: llvm/llvm-project
+    git:
+      submodules: recursive
+      lfs: true
+      depth: 10
+      config:
+        alias.ladi: '!echo "dadi"'
+  - apple/swift
+  - tensorflow/tensorflow

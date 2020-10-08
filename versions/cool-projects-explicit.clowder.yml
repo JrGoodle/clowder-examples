@@ -1,0 +1,24 @@
+name: cool-projects-explicit
+
+protocol: ssh
+
+sources:
+  github:
+    url: github.com
+
+clowder:
+  - name: llvm/llvm-project
+    path: llvm-project
+    branch: master
+    remote: origin
+    source: github
+  - name: apple/swift
+    path: swift
+    branch: master
+    remote: origin
+    source: github
+  - name: tensorflow/tensorflow
+    path: tensorflow
+    branch: master
+    remote: origin
+    source: github
