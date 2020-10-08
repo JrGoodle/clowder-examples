@@ -1,4 +1,4 @@
-name: upstreams-example
+name: upstreams
 
 defaults:
   git:
