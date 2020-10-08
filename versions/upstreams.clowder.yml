@@ -1,4 +1,4 @@
-name: forks-example
+name: upstreams-example
 
 defaults:
   git:
